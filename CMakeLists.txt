@@ -1,3 +1,4 @@
 cmake_minimum_required(VERSION 3.10)
-project(Hello)
-add_executable(Hello main.cpp)
+project(hello)
+add_executable(hello main.cpp)
+install(TARGETS hello DESTINATION bin)
