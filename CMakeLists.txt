@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
 project(hello)
-add_executable(hello main.cpp)
+file(GLOB SOURCES "src/*.cpp")
+add_executable(hello ${SOURCES})
 install(TARGETS hello DESTINATION bin)
